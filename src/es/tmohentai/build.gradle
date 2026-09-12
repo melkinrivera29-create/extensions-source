@@ -1,20 +1,8 @@
-apply from: "$rootDir/common/android/library.gradle"
-apply from: "$rootDir/common/android/compose.gradle"
-
 ext {
-    extName = 'TMOHentai'
-    extLang = 'es'
-    isNsfw = true
-    versionName = '1.4.40'
-    versionCode = 49
+    extName = 'TmoHentai'
+    pkgNameSuffix = 'es.tmohentai'
+    extClass = '.TmoHentai'
+    extVersionCode = 1
     libVersion = '1.5'
 }
-
-dependencies {
-    implementation(project(":core:loader"))
-    implementation(project(":source:localization"))
-}
-
-android {
-    namespace = "eu.kanade.tachiyomi.extension.es.tmohentai"
-}
+apply from: "$rootDir/common/android/library.gradle"
