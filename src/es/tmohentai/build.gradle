@@ -5,4 +5,4 @@ ext {
     extVersionCode = 1
     libVersion = '1.5'
 }
-apply from: "$rootDir/common/android/library.gradle"
+apply from: "$rootDir/common.gradle"
